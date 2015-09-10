@@ -2,10 +2,10 @@ class Ship
 
   attr_reader :position, :damage, :size
 
-  def initialize(position, size = 1)
+  def initialize(position)
     @position = position
     @damage = 0
-    @size = size
+    @size = 1
   end
 
   def hit
