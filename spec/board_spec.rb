@@ -1,5 +1,5 @@
 require 'board.rb'
-
+# comment for Adrian
 describe Board do
 
   it 'should respond to receive_ship' do

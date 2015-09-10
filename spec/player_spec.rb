@@ -1,5 +1,5 @@
 require 'player.rb'
-
+# Comment for Adrian
 describe Player do
 
   it 'responds to place method with argument of ship' do
