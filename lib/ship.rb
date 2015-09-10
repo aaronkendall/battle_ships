@@ -1,5 +1,5 @@
 class Ship
-
+#Comment for Adrian
   attr_reader :position, :damage, :size
 
   def initialize(position)

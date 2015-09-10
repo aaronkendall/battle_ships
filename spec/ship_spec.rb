@@ -1,5 +1,5 @@
 require 'ship.rb'
-
+# Comment for Adrian
 describe Ship do
 
   it 'has a position when created' do
