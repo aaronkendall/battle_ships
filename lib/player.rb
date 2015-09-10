@@ -17,6 +17,10 @@ class Player
     board.receive_hit
   end
 
+  def lost?
+    board.ship_array.empty?
+  end
+
 end
 
 p = Player.new

@@ -1,6 +1,7 @@
 require_relative 'ship'
+
 class Board
-print "Adrian test"
+
   attr_reader :ship_array, :shot
 
   def initialize
@@ -20,6 +21,8 @@ print "Adrian test"
     ship_array.each do |ship|
       if ship.position == shot[0]
         ship.hit
+        ship.sunk
+        ship_array.delete ship
         shot.clear
         return "Hit"
       else
@@ -32,4 +35,5 @@ print "Adrian test"
   def sunk?
     ship_array.empty?
   end
+
 end
