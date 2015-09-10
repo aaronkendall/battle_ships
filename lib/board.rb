@@ -1,6 +1,6 @@
 require_relative 'ship'
 class Board
-
+print "Adrian test"
   attr_reader :ship_array, :shot
 
   def initialize
