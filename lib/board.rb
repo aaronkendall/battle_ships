@@ -20,22 +20,34 @@ class Board
   def receive_hit
     ship_array.each do |ship|
     if ship_array.count == 1 && ship.position.length == 2 && ship.position == shot[0]
-      ship.hit
-      ship.sunk
-      ship_array.delete ship
-      shot.clear
+      final_hit(ship)
       return "Hit! Game over!"
+
     elsif ship.position == shot[0]
-      ship.hit
-      ship.sunk
-      ship_array.delete ship
-      shot.clear
+      pos_hit(ship)
       return "Hit"
+
     else
         shot.clear
         return "Missed"
       end
     end
+  end
+
+  private
+
+  def final_hit(ship)
+    ship.hit
+    ship.sunk
+    ship_array.delete ship
+    shot.clear
+  end
+
+  def pos_hit(ship)
+    ship.hit
+    ship.sunk
+    ship_array.delete ship
+    shot.clear
   end
 
   def sunk?

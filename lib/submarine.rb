@@ -15,7 +15,6 @@ class Submarine < Ship
     @board_position << new_coords.scan(/../)
     @board_position.flatten
     end
-
   end
 
 
