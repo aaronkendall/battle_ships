@@ -1,5 +1,5 @@
 require_relative 'ship'
-# comment for Usman
+# comment for Usman Jamil
 class Board
 
   attr_reader :ship_array, :shot
